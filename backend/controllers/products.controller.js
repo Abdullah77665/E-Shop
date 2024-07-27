@@ -1,5 +1,6 @@
 
 export const createproduct = (req, res, next) => {
+    console.log(req.body);
     try {
         res.json({
             message: "create product"
