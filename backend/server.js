@@ -1,5 +1,5 @@
 // import 'dotenv/config'
-import express from "express"
+import express, { json } from "express"
 import productRoutes from "./routers/products.routes.js"
 
 const app = express()
@@ -7,6 +7,21 @@ const app = express()
 
 app.use('/', productRoutes)
 
-app.listen(process.env.PORT, () => {
+app.use('*', (req,res,next)=>{
+    res.json({
+        message:"req is not found"
+    })
+})
+
+
+
+
+app.use((err, req, res, next)=> {
+  res.json({
+    message: err ||"somthing went wrong please try again"
+  })
+  })
+
+app.listen(3000, () => {
     console.log("server is running")
 })
