@@ -10,7 +10,7 @@ app.use('/', productRoutes)
 
 app.use('*', (req,res,next)=>{
     res.json({
-        message:"req is not found "
+        message:"req i not found "
     })
 })
 
