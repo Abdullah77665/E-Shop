@@ -3,7 +3,7 @@ export const createproduct = (req, res, next) => {
     console.log(req.body);
     try {
         res.json({
-            message: "created  product"
+            message: "create  product"
 
         },
         )
