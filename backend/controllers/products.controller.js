@@ -2,7 +2,7 @@
 export const createproduct = (req, res, next) => {
     try {
         res.json({
-            message: "createproduct"
+            message: "create product"
 
         },
         )
