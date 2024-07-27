@@ -18,7 +18,7 @@ app.use('*', (req,res,next)=>{
 
 app.use((err, req, res, next)=> {
   res.json({
-    message: err ||"somthing went wrong please try again"
+    message: err ||"somthing went wrong try again"
   })
   })
 
