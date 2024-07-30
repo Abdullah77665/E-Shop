@@ -9,11 +9,11 @@ import { createproduct,
 } from "../controllers/products.controller.js"
 
 
-router.route('/product/new').post(createproduct)
-router.route('/product/update').put(updateproduct)
-router.route('/product/all').get(getallproducts)
-router.route('/product/single').get(getproductbyid)
-router.route('/product/delete').delete(deleteproduct)
+router.route('/products/new').post(createproduct)
+router.route('/products/update').put(updateproduct)
+router.route('/products/all').get(getallproducts)
+router.route('/products/single').get(getproductbyid)
+router.route('/products/delete').delete(deleteproduct)
 
 
 
