@@ -8,7 +8,7 @@ export const createproduct = async (req, res, next) => {
     
     try {
         res.json({
-            message: "product created ",
+            message: "products created ",
         },
         )
     } catch (error) {
