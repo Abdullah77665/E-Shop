@@ -1,14 +1,18 @@
+import {product} from "../model/model.product.js"
 
-export const createproduct = (req, res, next) => {
-    console.log(req.body);
+
+export const createproduct = async (req, res, next) => {
+    const product = req.body
+
+    // await product.create(product)
+    
     try {
         res.json({
-            message: "create  product"
-
+            message: "product created ",
         },
         )
     } catch (error) {
-        next(error)
+     console.log(error);
     }
 }
 export const getallproducts = (req, res, next) => {

@@ -2,7 +2,11 @@
 import express, { json } from "express"
 import productRoutes from "./routers/products.routes.js"
 import bodyParser from 'body-parser'
+import { connectDB } from "./config/db.js"
+
 const app = express()
+
+connectDB()
 
 app.use(bodyParser.json())
 

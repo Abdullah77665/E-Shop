@@ -11,7 +11,7 @@ import { createproduct,
 
 router.route('/products/new').post(createproduct)
 router.route('/products/update').put(updateproduct)
-router.route('/products/alll').get(getallproducts)
+router.route('/products/all').get(getallproducts)
 router.route('/products/single').get(getproductbyid)
 router.route('/products/delete').delete(deleteproduct)
 
